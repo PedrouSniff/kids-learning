@@ -1,0 +1,40 @@
+@use "../abstract/mixins";
+@use "../abstract/variable" as v;
+@use "../base/font";
+
+// HEADER
+
+#navbar {
+    @include mixins.flex($justify:space-between);
+    background-color: v.$primarycolor;
+    border-bottom: solid v.$accentcolor 5px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    div {
+        margin-left: 5rem;
+        a {
+            img {
+                width: 15rem
+            }
+        }
+    }
+
+    ul {
+        @include mixins.flex;
+        margin-right: 5rem;
+
+        li {
+
+            a {
+                display: block;
+                font-size: 25px;
+                color: v.$secondarycolor;
+                margin-left: 3rem;
+                font-weight: bold;
+
+                @include mixins.hover
+            }
+        }
+    }
+}
