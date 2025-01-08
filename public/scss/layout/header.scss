@@ -35,6 +35,10 @@
 
                 @include mixins.hover
             }
+
+            .active {
+                border-bottom: solid v.$accentcolor 1px;
+            }
         }
     }
 }

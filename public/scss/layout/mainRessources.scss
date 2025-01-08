@@ -1,0 +1,20 @@
+@use "../abstract/mixins";
+@use "../abstract/variable" as v;
+@use "../base/font";
+
+
+#ressources {
+    #titre {
+        @include mixins.flex($direction: column);
+        background-color: v.$secondarycolor;
+        padding-top: 4rem;
+    
+        h2 {
+            padding-bottom: 2rem;
+        }
+    
+        p {
+            padding-bottom: 4rem;
+        }
+    }
+}

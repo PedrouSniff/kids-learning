@@ -1,3 +1,19 @@
 @use "../abstract/mixins";
 @use "../abstract/variable" as v;
 @use "../base/font";
+
+p, h1, h2, h3 {
+    color: v.$primarycolor;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+}

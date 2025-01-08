@@ -1,20 +1,36 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CoursController!{% endblock %}
+{% block title %}Cours{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block main %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    {# COURS #}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/Utilisateur/Desktop/Formation/Symfony/kids_learning/src/Controller/CoursController.php</code></li>
-        <li>Your template at <code>C:/Users/Utilisateur/Desktop/Formation/Symfony/kids_learning/templates/cours/index.html.twig</code></li>
-    </ul>
-</div>
+    <section id="cours">
+        <div id="titre">
+            <h2>Nos Cours</h2>
+            <p>Apprenez à votre rythme avec nos cours en ligne</p>
+        </div>
+
+        <div id="cartes">
+            <div>
+                <img src="{{asset('../images/maths.jpeg')}}" alt="image de math">
+                <h3>Mathématiques</h3>
+                <p>Explorez les concepts fondamentaux et avancés des mathématiques et devenez un maître des nombres.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </div>
+            <div class="carte0">
+                <img src="{{asset('../images/science.jpeg')}}" alt="image de math">
+                <h3>Sciences</h3>
+                <p>Découvrez les mystères de l'univers, de la biologie moléculaire à la physique quantique.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </div>
+            <div>
+                <img src="{{asset('../images/literature.jpeg')}}" alt="image de math">
+                <h3>Littérature</h3>
+                <p>Parcourez les oeuvres des plus grands auteurs, poètes, et dramaturges de l'histoire.</p>
+                <a href="">Démarrer l'Apprentissage</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}

@@ -21,7 +21,7 @@
 
 {# TITRE TEMOIGNAGES #}
 
-<div>
+<div class="inter_Tem">
     <h2>Témoignages</h2>
     <p>Découvrez ce que les gens disent de notre plateforme</p>
 </div>
@@ -29,31 +29,28 @@
 {# TÉMOIGNAGES #}
 
 <section id="temoignage">
-    <div>
-        <img src="" alt="photo de thérèse dupont">
+    <div class="carte">
+        <img src={{asset('../images/parent-1.jpeg')}} alt="photo de thérèse dupont">
         <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
-        <div>
+        <div class="nom">
             <p>- Thérèse Dupont</p>
         </div>
     </div>
-    <div>
-        <img src="" alt="photo de jean curie">
+    <div class="carte">
+        <img src={{asset('../images/parent-2.jpeg')}} alt="photo de jean curie">
         <p>"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à tout le monde!"</p>
-        <div>
+        <div class="nom">
             <p>- Jean Curie</p>
         </div>
     </div>
-    <div>
-        <img src="" alt="photo de albert dorne">
+    <div class="carte">
+        <img src={{asset('../images/parent-3.jpeg')}} alt="photo de albert dorne">
         <p>"Les ressources disponibles sont très utiles et variées. Une plateforme indispensable pour l'éducation."</p>
-        <div>
+        <div class="nom">
             <p>- Albert Dorne</p>
         </div>
     </div>
-</section>
-
-
-
+    </section>
 
 {% endblock %}
 

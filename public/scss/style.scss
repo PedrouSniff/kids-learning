@@ -2,7 +2,9 @@
 @use "base/font";
 @use "base/general";
 @use "layout/header";
-@use "layout/main";
+@use "layout/mainIndex";
+@use "layout/mainCours";
+@use "layout/mainRessources";
 @use "layout/footer";
 @use "responsive/tablette";
 @use "responsive/mobile";

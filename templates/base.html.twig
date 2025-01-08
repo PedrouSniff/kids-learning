@@ -14,10 +14,10 @@
         <nav id="navbar">
             <div><a href=""><img src={{asset('images/Logo.png')}} alt="Logo.png"></a></div>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href={{ path('app_cours')}}>Cours</a></li>
-                <li><a href="">Ressources</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_home' %} active {% endif %}" href={{ path('app_home')}}>Accueil</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_cours' %} active {% endif %}" href={{ path('app_cours')}}>Cours</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_ressources' %} active {% endif %}" href={{ path('app_ressources')}}>Ressources</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_contact' %} active {% endif %}" href={{ path('app_contact')}}>Contact</a></li>
             </ul>
         </nav>
 
@@ -35,8 +35,8 @@
             <a href=""><img src={{asset('images/Logo.png')}} alt="Logo.png"></a>
             <p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
             <p>info@kids-learning.fr</p>
-            <p>01 23 45 67 89</p>
-            <a>Formulaire de contact</a>
+            <p>06 59 34 02 37</p>
+            <a href={{ path('app_contact')}}>Formulaire de contact</a>
             <div></div>
             <p>© 2023 Kids Learning. Tous droits réservés.</p>
         </footer>
